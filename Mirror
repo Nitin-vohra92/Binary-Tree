@@ -14,7 +14,8 @@ class BinaryTreeNode {
 };
 ***************/
 
-void mirrorBinaryTree(BinaryTreeNode<int>* root) {
+void mirrorBinaryTree(BinaryTreeNode<int>* root) 
+{
   
   if(root==NULL)
     return;
@@ -22,7 +23,7 @@ void mirrorBinaryTree(BinaryTreeNode<int>* root) {
   BinaryTreeNode<int>*b=root->right;
   root->left=b;
   root->right=a;
-mirrorBinaryTree(root->left);
+  mirrorBinaryTree(root->left);
   mirrorBinaryTree(root->right);
 
 
