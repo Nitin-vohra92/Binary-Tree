@@ -23,12 +23,9 @@ int height(BinaryTreeNode<int>* root){
   return max(x,y)+1;
 }
 
-int diameter(BinaryTreeNode<int>* root) {
-    /* Don't write main().
-     * Don't read input, it is passed as function argument.
-     * Return output and don't print it.
-     * Taking input and printing output is handled automatically.
-     */
+int diameter(BinaryTreeNode<int>* root) 
+{
+   
 if(root==NULL)
   return 0;
   
@@ -39,7 +36,4 @@ if(root==NULL)
   
   return max(D1,max(D2,D3));
   
-  
-
-  
-}
+  }
