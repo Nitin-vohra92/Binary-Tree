@@ -14,7 +14,8 @@ class BinaryTreeNode {
 };
 ***************/
 #include<math.h>
-int height(BinaryTreeNode<int>* root){
+int height(BinaryTreeNode<int>* root)
+{
   if(root==NULL)
     return 0;
   int x=height(root->left);
