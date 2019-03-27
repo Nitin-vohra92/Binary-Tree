@@ -14,7 +14,8 @@ class BinaryTreeNode {
 };
 ***************/
 
-bool isNodePresent(BinaryTreeNode<int>* root, int x) {
+bool isNodePresent(BinaryTreeNode<int>* root, int x)
+{
   
 if(root==NULL)
   return 0;
@@ -23,8 +24,9 @@ if(root==NULL)
   bool a=isNodePresent(root->left,x);
   bool b=isNodePresent(root->right,x);
   if(a==1||b==1)
-  { return true;
-}
+  { 
+  return true;
+  }
     else
       return false;
 }
