@@ -14,9 +14,10 @@ class BinaryTreeNode {
 };
 ***************/
 
-BinaryTreeNode<int>* maxDataNode(BinaryTreeNode<int>* root) {
+BinaryTreeNode<int>* maxDataNode(BinaryTreeNode<int>* root)
+{
   
-if(root==NULL)
+  if(root==NULL)
   return root;
   BinaryTreeNode<int>* max=root;
   BinaryTreeNode<int>*max1=maxDataNode(root->left);
