@@ -1,0 +1,53 @@
+// Following is the Binary Tree node structure
+/**************
+class BinaryTreeNode {
+    public : 
+    T data;
+    BinaryTreeNode<T> *left;
+    BinaryTreeNode<T> *right;
+
+    BinaryTreeNode(T data) {
+        this -> data = data;
+        left = NULL;
+        right = NULL;
+    }
+};
+***************/
+#include<queue>
+
+void printLevelWise(BinaryTreeNode<int> *root) {
+    /* Don't write main().
+     * Don't read input, it is passed as function argument.
+     * Print output and don't return it.
+     * Taking input is handled automatically.
+     */
+ queue<BinaryTreeNode<int>*>q;
+   	q.push(root);
+
+  while(!q.empty())
+  {
+
+    BinaryTreeNode<int> *current=q.front();
+    cout<<current->data<<":";
+    q.pop();
+    
+    cout<<"L"<<":";
+      if(current->left!=NULL)
+      {cout<<current->left->data;
+    q.push(current->left);
+      }
+    else
+      cout<<-1;
+    
+    cout<<","<<"R"<<":";
+      if(current->right!=NULL)
+      {cout<<current->right->data<<endl;
+        q.push(current->right);
+  }
+    else
+      cout<<-1<<endl;
+    
+    }
+
+  }
+
