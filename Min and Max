@@ -61,13 +61,11 @@ BinaryTreeNode<int>* minDataNode(BinaryTreeNode<int>* root)
 
 PairAns minMax(BinaryTreeNode<int> *root) 
 {
-   
   PairAns p;
   BinaryTreeNode<int> *max=maxDataNode(root);
   BinaryTreeNode<int> *min=minDataNode(root);
   p.min=min->data;
   p.max=max->data;
   return p;
-
 
 }
