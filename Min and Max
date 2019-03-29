@@ -23,12 +23,11 @@ class BinaryTreeNode {
 ***************/
 BinaryTreeNode<int>* maxDataNode(BinaryTreeNode<int>* root) 
 {
-   
-if(root==NULL)
+  if(root==NULL)
   return root;
   BinaryTreeNode<int>* max=root;
- BinaryTreeNode<int>*max1=maxDataNode(root->left);
- BinaryTreeNode<int>*max2=maxDataNode(root->right);
+  BinaryTreeNode<int>*max1=maxDataNode(root->left);
+  BinaryTreeNode<int>*max2=maxDataNode(root->right);
   if(max1!=NULL&&max->data<max1->data)
   {
     max=max1;
@@ -39,13 +38,14 @@ if(root==NULL)
   }
   return max;
 }
-BinaryTreeNode<int>* minDataNode(BinaryTreeNode<int>* root) {
+BinaryTreeNode<int>* minDataNode(BinaryTreeNode<int>* root) 
+{
     
-if(root==NULL)
+  if(root==NULL)
   return root;
   BinaryTreeNode<int>* max=root;
- BinaryTreeNode<int>*max1=minDataNode(root->left);
- BinaryTreeNode<int>*max2=minDataNode(root->right);
+  BinaryTreeNode<int>*max1=minDataNode(root->left);
+  BinaryTreeNode<int>*max2=minDataNode(root->right);
   if(max1!=NULL&&max->data>max1->data)
   {
     max=max1;
