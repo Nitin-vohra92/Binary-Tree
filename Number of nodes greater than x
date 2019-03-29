@@ -14,18 +14,16 @@ class BinaryTreeNode {
 };
 ***************/
 
-int countNodesGreaterThanX(BinaryTreeNode<int>* root, int x) {
-    /* Don't write main().
-     * Don't read input, it is passed as function argument.
-     * Return output and don't print it.
-     * Taking input and printing output is handled automatically.
-     */
-if(root==NULL)
+int countNodesGreaterThanX(BinaryTreeNode<int>* root, int x)
+
+{
+   
+  if(root==NULL)
   return 0;
   
   int z=countNodesGreaterThanX(root->left,x);
   int y=countNodesGreaterThanX(root->right,x);
-   if(root->data>x)
+  if(root->data>x)
     return 1+y+z;
  
   return y+z;
