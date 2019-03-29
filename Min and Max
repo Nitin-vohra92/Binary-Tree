@@ -1,6 +1,7 @@
 // Following is the Binary Tree node structure
 /**************
-class BinaryTreeNode {
+class BinaryTreeNode
+{
     public : 
     T data;
     BinaryTreeNode<T> *left;
@@ -67,5 +68,4 @@ PairAns minMax(BinaryTreeNode<int> *root)
   p.min=min->data;
   p.max=max->data;
   return p;
-
 }
