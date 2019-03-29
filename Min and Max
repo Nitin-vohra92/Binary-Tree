@@ -59,12 +59,9 @@ if(root==NULL)
 
 
 
-PairAns minMax(BinaryTreeNode<int> *root) {
-    /* Don't write main().
-     * Don't read input, it is passed as function argument.
-     * Return output and don't print it.
-     * Taking input and printing output is handled automatically.
-     */
+PairAns minMax(BinaryTreeNode<int> *root) 
+{
+   
   PairAns p;
   BinaryTreeNode<int> *max=maxDataNode(root);
   BinaryTreeNode<int> *min=minDataNode(root);
