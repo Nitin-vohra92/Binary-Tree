@@ -14,9 +14,10 @@ class BinaryTreeNode {
 };
 ***************/
 
-int countLeafNodes(BinaryTreeNode<int>* root) {
+int countLeafNodes(BinaryTreeNode<int>* root)
+{
   
-if(root==NULL)
+  if(root==NULL)
   return 0;
   if(root->left==NULL&&root->right==NULL)
   {
