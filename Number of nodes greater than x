@@ -15,9 +15,7 @@ class BinaryTreeNode {
 ***************/
 
 int countNodesGreaterThanX(BinaryTreeNode<int>* root, int x)
-
-{
-   
+{ 
   if(root==NULL)
   return 0;
   
