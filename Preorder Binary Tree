@@ -14,17 +14,16 @@ class BinaryTreeNode {
 };
 ***************/
 
-void preOrder(BinaryTreeNode<int> *root) {
+void preOrder(BinaryTreeNode<int> *root)
+{
     
-if(root==NULL)
+  if(root==NULL)
     return;
   
   cout<<root->data<<" ";
 
   preOrder(root->left);
-    preOrder(root->right);
-
-   
+  preOrder(root->right);
   
 }
 
