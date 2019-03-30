@@ -23,29 +23,25 @@ void printLevelWise(BinaryTreeNode<int> *root)
 
     while(!q.empty())
     {
-
-    BinaryTreeNode<int> *current=q.front();
-    cout<<current->data<<":";
-    q.pop();
-    
-    cout<<"L"<<":";
+      BinaryTreeNode<int> *current=q.front();
+      cout<<current->data<<":";
+      q.pop();   
+      cout<<"L"<<":";
       if(current->left!=NULL)
       {
       cout<<current->left->data;
       q.push(current->left);
       }
-    else
+      else
       cout<<-1;
-    
-    cout<<","<<"R"<<":";
-     if(current->right!=NULL)
-      {
-      cout<<current->right->data<<endl;
-      q.push(current->right);
-      }
-    else
-      cout<<-1<<endl;
-    }
-
-  }
+      cout<<","<<"R"<<":";
+      if(current->right!=NULL)
+       {
+       cout<<current->right->data<<endl;
+       q.push(current->right);
+       }
+      else
+       cout<<-1<<endl;
+     }
+   }
 
