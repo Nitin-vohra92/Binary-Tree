@@ -25,5 +25,4 @@ void postOrder(BinaryTreeNode<int> *root)
 
   cout<<root->data<<" ";
    
-  
 }
