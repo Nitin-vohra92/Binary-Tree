@@ -14,7 +14,8 @@
  };
  ***************/
 
-void postOrder(BinaryTreeNode<int> *root) {
+void postOrder(BinaryTreeNode<int> *root)
+{
    
   if(root==NULL)
     return;
