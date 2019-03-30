@@ -38,13 +38,13 @@ void printLevelWise(BinaryTreeNode<int> *root)
       cout<<-1;
     
     cout<<","<<"R"<<":";
-      if(current->right!=NULL)
-      {cout<<current->right->data<<endl;
-        q.push(current->right);
-  }
+     if(current->right!=NULL)
+      {
+      cout<<current->right->data<<endl;
+      q.push(current->right);
+      }
     else
       cout<<-1<<endl;
-    
     }
 
   }
